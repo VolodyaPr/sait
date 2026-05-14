@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Достопримечательности Вологды</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo-link">Вологда — душа Русского Севера</a>
+        </div>
+        <nav>
+            <ul class="main-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="sights.html">Достопримечательности</a></li>
+            <li><a href="gallery.html">Промыслы</a></li>
+            <li><a href="about.html">Об авторе</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    <h1 class="sights-title">Достопримечательности Вологды</h1>
+
+    <div class="sights-container">
+        <div class="sight-wrapper">
+            <div class="sight-card-interactive">
+                <div class="sight-info-layer">
+                    <h3>Софийский собор</h3>
+                    <p>
+                        Главный православный храм города, возведенный по приказу Ивана Грозного в 1568–1570 годах. По легенде, именно 
+                        здесь царь получил «знамение» и покинул город.
+                    </p>
+                    <button class="more-btn" onclick="openModal('modal1')">Подробнее</button>
+                </div>
+                <div class="sight-image-layer">
+                    <img src="images/sofia_cathedral.jpg" alt="Софийский собор">
+                    <div class="image-caption">Софийский собор</div>
+                </div>
+            </div>
+        </div>
+
+    <div class="sight-wrapper">
+    <div class="sight-card-interactive">
+        <div class="sight-info-layer">
+            <h3>Музей кружева</h3>
+            <p>Расположен в здании бывшего Госбанка. Здесь собрана крупнейшая в России коллекция кружева — символа Вологодчины.</p>
+            <button class="more-btn" onclick="openModal('modal_lace')">Подробнее</button>
+        </div>
+        <div class="sight-image-layer">
+            <img src="images/lace_museum.png" alt="Музей кружева">
+            <div class="image-caption">Музей кружева</div>
+        </div>
+    </div>
+    </div>
+
+        <div class="sight-wrapper">
+    <div class="sight-card-interactive">
+        <div class="sight-info-layer">
+            <h3>Спасо-Прилуцкий монастырь</h3>
+            <p>Один из самых величественных ансамблей Русского Севера, основанный в 1371 году учеником Сергия Радонежского.</p>
+            <button class="more-btn" onclick="openModal('modal_priluki')">Подробнее</button>
+        </div>
+        <div class="sight-image-layer">
+            <img src="images/priluki.jpg" alt="Спасо-Прилуцкий монастырь">
+            <div class="image-caption">Спасо-Прилуцкий монастырь</div>
+        </div>
+    </div>
+        </div>
+
+    <div class="sight-wrapper">
+    <div class="sight-card-interactive">
+        <div class="sight-info-layer">
+            <h3>Деревянное зодчество</h3>
+            <p>Уникальные «резные палисады» и купеческие особняки, сохранившие облик города XIX века.</p>
+            <button class="more-btn" onclick="openModal('modal_wood')">Подробнее</button>
+        </div>
+        <div class="sight-image-layer">
+            <img src="images/wooden_vologda.jpg" alt="Деревянная Вологда">
+            <div class="image-caption">Деревянное зодчество</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="sight-wrapper">
+    <div class="sight-card-interactive">
+        <div class="sight-info-layer">
+            <h3>Ленивая площадка</h3>
+            <p>Место основания города, где сегодня возвышается монументальный памятник в честь 800-летия Вологды.</p>
+            <button class="more-btn" onclick="openModal('modal_lazy')">Подробнее</button>
+        </div>
+        <div class="sight-image-layer">
+            <img src="images/lazy_place.jpg" alt="Ленивая площадка">
+            <div class="image-caption">Ленивая площадка</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="sight-wrapper">
+    <div class="sight-card-interactive">
+        <div class="sight-info-layer">
+            <h3>Памятник С.В. Ильюшину</h3>
+            <p>Монумент великому авиаконструктору и нашему земляку, создателю знаменитых самолетов «Ил».</p>
+            <button class="more-btn" onclick="openModal('modal_ilyushin')">Подробнее</button>
+        </div>
+        <div class="sight-image-layer">
+            <img src="images/ilyushin_monument.jpg" alt="Памятник Ильюшину">
+            <div class="image-caption">Памятник С.В. Ильюшину</div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <div id="modal1" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modal1')">×</span>
+        <h2>Софийский собор: История и Величие</h2>
+        <div class="modal-body">
+            <img src="images/sofia_cathedral.jpg" alt="Софийский собор">
+            <p>
+                Софийский собор — старейшее каменное здание Вологды, построенное в 1568–1570 годах по приказу Ивана Грозного. 
+                Пятиглавый храм задумывался как копия московского Успенского собора. Внутри собора сохранились уникальные фрески XVII 
+                века, общая площадь которых составляет около 5000 квадратных метров, выполненные артелью ярославских мастеров во главе с 
+                Дмитрием Плехановым.
+            </p>
+            <div class="modal-address">Адрес: ул. Орлова, 15 (Кремлёвская площадь)</div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal_priluki" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modal_priluki')">×</span>
+        <h2>Спасо-Прилуцкий монастырь</h2>
+        <div class="modal-body">
+            <img src="images/priluki.jpg" alt="Монастырь">
+            <p>
+                Действующий мужской монастырь, основанный учеником Сергия Радонежского — Димитрием Прилуцким. Это мощная крепость,
+                 защищавшая подступы к городу. На территории находится древнейшая в России деревянная шатровая церковь (XVI в.), 
+                 перевезенная сюда для сохранности.
+            </p>
+            <div class="modal-address">Адрес: ул. Монастырская, 2 (Прилуки)</div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal_lace" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modal_lace')">×</span>
+        <h2>Музей кружева</h2>
+        <div class="modal-body">
+            <img src="images/lace_museum.png" alt="Музей кружева">
+            <p>
+                Вологодский музей кружева — это уникальная сокровищница, посвященная самому известному народному промыслу региона. 
+                Экспозиция расположена в бывшем здании Госбанка. Здесь представлены работы мастериц, начиная с XVII века: 
+                от церковных облачений до современных панно. Вы узнаете о технике плетения на коклюшках и увидите шедевры, 
+                завоевавшие Гран-при на международных выставках в Париже и Брюсселе.
+            </p>
+            <div class="modal-address">Адрес: Кремлёвская площадь, 12</div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal_wood" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modal_wood')">×</span>
+        <h2>Деревянное зодчество Вологды</h2>
+        <div class="modal-body">
+            <img src="images/wooden_vologda.jpg" alt="Деревянный дом">
+            <p>
+                Вологда — единственный город в России, где сохранились памятники всех основных типов деревянных домов XIX века: 
+                дворянские усадьбы, купеческие особняки и доходные дома. Особую славу городу принес «резной палисад» и уникальная 
+                пропильная резьба, украшающая балконы и наличники.
+            </p>
+            <div class="modal-address">Адрес: Исторический центр (ул. Благовещенская, Герцена)</div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal_lazy" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modal_lazy')">×</span>
+        <h2>Ленивая площадка</h2>
+        <div class="modal-body">
+            <img src="images/lazy_place.jpg" alt="Памятник 800-летию">
+            <p>
+                Высокий берег реки Вологды, где, согласно преданию, святой Герасим в 1147 году основал город. 
+                Название «Ленивая площадка» закрепилось за этим местом с XVII века: здесь находился «ленивый торг» — рынок, 
+                на котором товары не выкладывали на прилавки, а продавали прямо с телег. 
+                В 1959 году здесь установили памятник в честь 800-летия Вологды. С площадки открывается один из лучших панорамных 
+                видов на заречную часть города и храмы.
+            </p>
+            <div class="modal-address">Адрес: ул. Бурмагиных (набережная)</div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal_ilyushin" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modal_ilyushin')">×</span>
+        <h2>Памятник самолету Ил-28 (в честь С.В. Ильюшина)</h2>
+        <div class="modal-body">
+            <img src="images/ilyushin_monument.jpg" alt="Памятник самолету Ил-28">
+            <p>
+                На пересечении улиц Мира и Октябрьской установлен фронтовой бомбардировщик Ил-28 — символ достижений советской 
+                авиации и дань памяти нашему земляку, выдающемуся авиаконструктору Сергею Владимировичу Ильюшину. Именно под его 
+                руководством был создан этот первый советский реактивный бомбардировщик, ставший эпохальным в истории мирового 
+                самолетостроения. Памятник был торжественно открыт в 1984 году к 90-летию со дня рождения конструктора. Для вологжан 
+                этот «серебряный самолет» является одним из самых узнаваемых ориентиров в центре города.
+            </p>
+            <div class="modal-address">Адрес: сквер имени Ильюшина (пересечение ул. Мира и Октябрьской)</div>
+        </div>
+    </div>
+    </div>
+
+    </main>
+
+<button id="scrollTopBtn" title="Наверх">↑</button>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026, Вовна Кирилл. Связь: vovna.kirya@mail.ru</p>
+            <p><a href="https://pm.vogu35.ru/" target="_blank" class="dept-link">Сайт кафедры</a></p>
+            <p>Счётчик посещений: <span id="visit-counter">0</span></p>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" title="Наверх">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
